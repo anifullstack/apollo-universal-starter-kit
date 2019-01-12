@@ -1,9 +1,6 @@
 export default {
-  engineConfig: {
-    apiKey: '', // Set your Engine API key here
-    logging: {
-      level: 'DEBUG' // Engine Proxy logging level. DEBUG, INFO, WARN or ERROR
-    }
-  },
-  dumpTraffic: true // Debug configuration that logs traffic between Proxy and GraphQL server
+  apiKey: process.env.APOLLO_ENGINE_API_KEY, // Set your Apollo Engine API key
+  logging: {
+    level: 'DEBUG' // Engine Proxy logging level. DEBUG, INFO, WARN or ERROR
+  }
 };

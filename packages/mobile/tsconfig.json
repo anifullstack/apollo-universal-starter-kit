@@ -1,9 +1,8 @@
 {
   "extends": "../../tsconfig.json",
-  "awesomeTypescriptLoaderOptions": {
-    "reportFiles": [
-      "**/*.ts",
-      "**/*.tsx"
-    ]
-  }
+  "include": [
+    "../../**/typings.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
